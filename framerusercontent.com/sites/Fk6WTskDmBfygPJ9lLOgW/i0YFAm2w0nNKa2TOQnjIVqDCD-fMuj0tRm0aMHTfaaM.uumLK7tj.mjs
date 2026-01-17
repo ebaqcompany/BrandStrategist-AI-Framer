@@ -1,0 +1,1 @@
+import{__FramerMetadata__$1 as e,augiA20Il_default as t,init_augiA20Il as n}from"./shared-lib.Dys0sbs7.mjs";n();export{e as __FramerMetadata__,t as default};
