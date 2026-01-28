@@ -1,0 +1,11 @@
+# Robots.txt for brandstrategist.ai
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://brandstrategist.ai/sitemap.xml
+
+# Disallow PDF files
+Disallow: /*.pdf$
+Disallow: /*.PDF$
