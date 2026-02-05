@@ -247,7 +247,7 @@
             --color-bg-card-hover: rgb(25, 25, 25);
             --color-bg-nav: rgba(0, 0, 0, 0.8);
             --color-text-primary: rgb(255, 255, 255);
-            --color-text-secondary: rgb(163, 163, 163);
+            --color-text-secondary: rgb(200, 200, 200);
             --color-text-muted: rgb(115, 115, 115);
             --color-border: rgb(38, 38, 38);
             --color-border-light: rgb(30, 30, 30);
@@ -458,6 +458,22 @@
             gap: 6px;
         }
 
+        /* Featured Image */
+        .featured-image {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: contain;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--color-border-light);
+        }
+
         /* Article Content */
         .article-content {
             max-width: 800px;
@@ -650,7 +666,7 @@
         /* Table of Contents */
         .toc {
             background: var(--color-bg-card);
-            border: 1px solid var(--color-border-light);
+            border: 1px solid #00afec;
             border-radius: var(--border-radius);
             padding: 28px;
             margin: 36px 0;
@@ -920,6 +936,11 @@
             </div>
         </div>
     </header>
+
+    <!-- Featured Image -->
+    <div class="featured-image">
+        <img width="800" height="450" src="/blog/how-to-create-brand-strategy/thumbnail.webp" alt="How to Create a Brand Strategy">
+    </div>
 
     <!-- Article Content -->
     <article class="article-content">

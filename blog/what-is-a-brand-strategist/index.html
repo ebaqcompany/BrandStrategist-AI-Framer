@@ -270,6 +270,22 @@
             gap: 8px;
         }
 
+        /* Featured Image */
+        .featured-image {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .featured-image img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            object-fit: contain;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+        }
+
         /* Article Content */
         .article-content {
             max-width: 800px;
@@ -372,7 +388,7 @@
         /* Table of Contents */
         .toc {
             background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
+            border: 1px solid #00afec;
             border-radius: 12px;
             padding: 24px;
             margin: 32px 0;
@@ -465,6 +481,11 @@
             <span>8 min read</span>
         </div>
     </header>
+
+    <!-- Featured Image -->
+    <div class="featured-image">
+        <img width="800" height="450" src="https://framerusercontent.com/images/7CPjI8ZxagEQrjpN1ReTgku5Vg.jpg" alt="What is a Brand Strategist">
+    </div>
 
     <!-- Article Content -->
     <article class="article-content">
