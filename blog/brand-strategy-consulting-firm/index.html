@@ -303,6 +303,19 @@
             .footer-container { flex-direction: column; text-align: center; }
             .footer-links { flex-wrap: wrap; justify-content: center; }
         }
+    
+        /* Try App CTA */
+        .try-app-cta { max-width: 800px; margin: 0 auto; padding: 0 24px 64px; }
+        .try-app-cta-box { background: linear-gradient(135deg, rgba(56, 189, 248, 0.15) 0%, rgba(56, 189, 248, 0.05) 100%); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: var(--border-radius-lg); padding: 48px; text-align: center; position: relative; overflow: hidden; }
+        .try-app-cta-box::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%); animation: pulse 4s ease-in-out infinite; }
+        @keyframes pulse { 0%, 100% { transform: scale(1); opacity: 0.5; } 50% { transform: scale(1.1); opacity: 0.8; } }
+        .try-app-cta-content { position: relative; z-index: 1; }
+        .try-app-cta-icon { width: 64px; height: 64px; margin: 0 auto 24px; background: var(--color-primary); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+        .try-app-cta-icon svg { width: 32px; height: 32px; color: var(--color-bg-dark); }
+        .try-app-cta h3 { font-size: 28px; font-weight: 900; margin-bottom: 16px; letter-spacing: -0.02em; }
+        .try-app-cta p { color: var(--color-text-secondary); font-size: 17px; max-width: 500px; margin: 0 auto 28px; line-height: 1.7; }
+        .try-app-cta .cta-button { padding: 16px 40px; font-size: 16px; }
+
     </style>
 </head>
 <body>
@@ -780,6 +793,24 @@
             </div>
         </div>
     </article>
+    <!-- Try App CTA -->
+    <section class="try-app-cta">
+        <div class="try-app-cta-box">
+            <div class="try-app-cta-content">
+                <div class="try-app-cta-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3>Build Your Brand Strategy Now</h3>
+                <p>Stop guessing. Use AI-powered insights to create a professional brand strategy that positions your business for success.</p>
+                <a href="https://app.brandstrategist.ai" class="cta-button" target="_blank">Try Brand Strategist AI Free</a>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Related Section -->
     <section class="related-section">
